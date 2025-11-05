@@ -2,19 +2,54 @@
 <html lang=es>
 
 <head>
-  <meta charset=UTF-8>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <link rel=stylesheet href=style.css>
-  <script type=module src=main.js defer></script>
-  <title>Panel de usuario</title>
+    <meta charset=UTF-8>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel=stylesheet href=style.css>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script type=module src=main.js defer></script>
+    <title>Panel de usuario</title>
 </head>
 
 <body>
-  <main>
+    <main>
+        <div class="contenedorRegistro">
+            <form name="formularioRegistro" id="formularioRegistro" class="formulario" action="#" method="post">
+                <h1>Registro</h1>
+                <input id="nombreUsuarioRegistro" type="text" placeholder="Usuario" required>
+                <input id="passwordRegistro" type="password" placeholder="Contraseña" required>
+                <i class='bx bx-eye'></i>
+                <input id="telefono" type="tel" placeholder="Teléfono" required>
+                <input id="codigoPostal" type="number" placeholder="Código postal" required>
 
+                <input type="checkbox" id="mayorEdad" value="suscrito">
+                <label for="mayorEdad">Soy mayor de edad</label>
+                <button id="botonRegistro" type="submit">Crear cuenta</button>
+                <a href="">¿Ya tienes cuenta? Inicia sesión</a>
+            </form>
+        </div>
 
-  
-  </main>
+        <div class="contenedorIniciarSesion">
+            <form name="formularioIniciarSesion" id="formularioIniciarSesion" class="formulario" action="#"
+                method="post">
+                <h1>Iniciar sesión</h1>
+                <input id="nombreUsuarioSesion" type="text" placeholder="Usuario" required>
+                <input id="passwordSesion" type="password" placeholder="Contraseña" required>
+
+                <button id="botonIniciarSesion" type="submit">Entrar</button>
+                <a href="">Registrarse</s></a>
+            </form>
+        </div>
+
+        <div class="contenedorPanelDeUsuario">
+            <form name="formularioPanelDeUsuario" id="formularioPanelDeUsuario" class="formulario" action="#"
+                method="post">
+                <h1>Bienvenido</h1>
+
+                <button id="botonCambiarTema" type="submit">Cambiar tema</button>
+                <button id="botonCerrarSesion" type="button">Cerrar sesión</button>
+            </form>
+        </div>
+
+    </main>
 </body>
-
 </html>

@@ -4,3 +4,10 @@
     box-sizing: border-box;
 }
 
+.formulario {
+    display: none; 
+}
+
+.formulario.active { 
+    display: block; 
+}
