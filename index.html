@@ -12,44 +12,30 @@
 
 <body>
     <main>
-        <div class="contenedorRegistro">
+        <div class="contenedorInput">
             <form name="formularioRegistro" id="formularioRegistro" class="formulario" action="#" method="post">
                 <h1>Registro</h1>
                 <input id="nombreUsuarioRegistro" type="text" placeholder="Usuario" required>
-                <input id="passwordRegistro" type="password" placeholder="Contraseña" required>
+                <small></small>
+                <input id="contraseniaRegistro" type="password" placeholder="Contraseña" required>
+                <small></small>
                 <i class='bx bx-eye'></i>
                 <input id="telefono" type="tel" placeholder="Teléfono" required>
+                <small></small>
                 <input id="codigoPostal" type="number" placeholder="Código postal" required>
-
-                <input type="checkbox" id="mayorEdad" value="suscrito">
+                <small></small>
                 <label for="mayorEdad">Soy mayor de edad</label>
+                <input type="checkbox" id="mayorEdad" value="mayorEdad">
+
+                <div id="contenedorEdad">
+                <input id="edad" type="number" placeholder="Edad">
+                <small></small>
+                </div>
+                
                 <button id="botonRegistro" type="submit">Crear cuenta</button>
-                <a href="">¿Ya tienes cuenta? Inicia sesión</a>
+                <a id="enlaceInicioSesion">¿Ya tienes cuenta? Inicia sesión</a>
             </form>
         </div>
-
-        <div class="contenedorIniciarSesion">
-            <form name="formularioIniciarSesion" id="formularioIniciarSesion" class="formulario" action="#"
-                method="post">
-                <h1>Iniciar sesión</h1>
-                <input id="nombreUsuarioSesion" type="text" placeholder="Usuario" required>
-                <input id="passwordSesion" type="password" placeholder="Contraseña" required>
-
-                <button id="botonIniciarSesion" type="submit">Entrar</button>
-                <a href="">Registrarse</s></a>
-            </form>
-        </div>
-
-        <div class="contenedorPanelDeUsuario">
-            <form name="formularioPanelDeUsuario" id="formularioPanelDeUsuario" class="formulario" action="#"
-                method="post">
-                <h1>Bienvenido</h1>
-
-                <button id="botonCambiarTema" type="submit">Cambiar tema</button>
-                <button id="botonCerrarSesion" type="button">Cerrar sesión</button>
-            </form>
-        </div>
-
     </main>
 </body>
 </html>

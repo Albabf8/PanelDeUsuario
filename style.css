@@ -5,9 +5,14 @@
 }
 
 .formulario {
-    display: none; 
+    display: none;
 }
 
-.formulario.active { 
-    display: block; 
+.formulario.active {
+    display: block;
 }
+
+#contenedorEdad {
+    display: none;
+}
+
